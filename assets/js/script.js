@@ -1,6 +1,7 @@
 $(function() {
 
-    const url = 'localhost:8080'
+    // const url = 'localhost:8080'
+    const socket = io()
 
     const doc = $(document),
           win = $(window),
@@ -22,7 +23,7 @@ $(function() {
     let clients = {};
     let cursors = {};
 
-    let socket = io.connect(url);
+    // let socket = io.connect(url);
 
     socket.on('moving', (data) => {
         if(! (data.id in clients)){
