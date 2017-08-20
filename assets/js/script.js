@@ -3,10 +3,10 @@ $(function() {
     const url = 'localhost:8080'
 
     const doc = $(document),
-        win = $(window),
-        canvas = $('#paper'),
-        ctx = canvas[0].getContext('2d'),
-        instructions = $('#instructions')
+          win = $(window),
+          canvas = $('#paper'),
+          ctx = canvas[0].getContext('2d'),
+          instructions = $('#instructions')
 
   // This demo depends on the canvas element
     if(!('getContext' in document.createElement('canvas'))){
